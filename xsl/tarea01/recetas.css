@@ -5,3 +5,11 @@ Colores para el texto: #30A010, #A0CC80, #B0DD90, #106610
 Colores de tablas: #DDDD80, #AAC03B, #106610
 
 Color para los bordes: #55C03B */
+
+.v-line{
+    border-left: thick solid #55C03B;
+    height:100%;
+    left: 50%;
+    position: absolute;
+   }
+   
