@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="recetas.xsl"?> 
 <recetas>
 	<receta>
 		<tipo definicion="entrante"/>
@@ -19,7 +20,6 @@
 		<tiempo>10 minutos</tiempo>
 		<elaboracion>Cazo</elaboracion>
 	</receta>
-	
 	<receta>
 		<tipo definicion="primero"/>
 		<dificultad>Media</dificultad>

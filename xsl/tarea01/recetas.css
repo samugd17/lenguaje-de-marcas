@@ -1,15 +1,61 @@
-/* Fuente: Arial, Verdana.
-
-Colores para el texto: #30A010, #A0CC80, #B0DD90, #106610
-
-Colores de tablas: #DDDD80, #AAC03B, #106610
-
-Color para los bordes: #55C03B */
-
+.initial{
+  background-color: #DDDD80;
+  text-align: center;
+  color: #106610;
+  font-weight: bold;
+  font-size: 30;
+  height: 100px;
+}
+.initial p{
+  background-color: #DDDD80;
+  text-align: center;
+  color: #106610;
+  font-size: 15;
+}
 .v-line{
-    border-left: thick solid #55C03B;
-    height:100%;
-    left: 50%;
-    position: absolute;
-   }
+  border-left: thick solid #55C03B;
+  left: 12em;
+  position: absolute;
+}
+
+.no-line{
+  margin-left: 1em;
+}
+
+h1{
+  text-align: center;
+}
+h3{
+  color:#30A010;
+}
+.table_list {
+  text-align:left;
+  position: relative;
+  max-width: fit-content;
+}
+.table_list_name{
+  font-size: small;
+  position: relative;
+  text-align: center;
+}
+th{
+  background-color:#DDDD80;
+  height: 50px;
+  color: #106610;
+}
+td {
+  border:hidden;
+}
+.pasos{
+  color: #30A010;
+  font-weight: bold;
+}
+ul{
+  list-style: none;
+  margin-top: -12;
+}
+*{
+  font-family: Arial, Verdana;
+}
+  
    
