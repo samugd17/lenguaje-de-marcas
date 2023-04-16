@@ -50,7 +50,7 @@
 						</div>
 					</xsl:for-each>
 				</div>
-										</div>
+				</div>
 			</body>
 		</html>
 	</xsl:template>
