@@ -28,7 +28,11 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
 
 - __Nombre del Instituto__:
 
-    <nombre>IES Puerto de la Cruz –Telesforo Bravo </nombre>
+    <nombre>IES Puerto de la Cruz –Telesforo Bravo</nombre>
+
+    ```
+    ies/nombre/
+    ```
 
 - __Página web del Instituto__:
 
@@ -136,7 +140,7 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
 
 - Horas semanales de los módulos de más de 3 horas semanales:
 
-    Nota: Resuelva este ejercicio de dos formas distintas, en un únicopaso de búsqueda y en dos pasos de búsqueda.
+    Nota: Resuelva este ejercicio de dos formas distintas, en un único paso de búsqueda y en dos pasos de búsqueda.
 
     - 4
     - 5
