@@ -1,6 +1,6 @@
 # XPath
 
-## Ejercicio 1:
+### Ejercicio 1:
 Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la respuesta deseada.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -39,7 +39,7 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
 
 - __Página web del Instituto__:
 
-    https://www3.gobiernodecanarias.org/medusa/edublog/iespuertodelacruztelesforobravo/
+    <web>https://www3.gobiernodecanarias.org/medusa/edublog/iespuertodelacruztelesforobravo/</web>
 
     _XPath:_
 
@@ -121,7 +121,7 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     /ies/ciclos/ciclo[decretoTitulo/@año=2008 or decretoTitulo/@año=2010]/nombre
     ```
 
-## Ejercicio 2.
+### Ejercicio 2.
 Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la respuesta deseada.
 
 ```xml
@@ -167,7 +167,7 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     _XPath:_
 
     ```
-    /ies/modulos/modulo/nombre
+    /ies/modulos/modulo/nombre/text()
     ```
 
 - Nombre de los módulos del ciclo ASIR:
@@ -181,13 +181,13 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     _XPath: En un sólo paso._
 
     ```
-    /ies/modulos/modulo[ciclo="ASIR"]/nombre
+    /ies/modulos/modulo[ciclo="ASIR"]/nombre/text()
     ```
 
     _XPath: En dos pasos._
 
     ```
-    
+    nsnc
     ```
 
 - Nombre de los módulos que se imparten en el segundo curso de cualquier ciclo:
@@ -200,13 +200,13 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     _XPath: En un sólo paso._
 
     ```
-    /ies/modulos/modulo[curso="2"]/nombre
+    /ies/modulos/modulo[curso=2]/nombre/text()
     ```
 
     _XPath: En dos pasos._
 
     ```
-    
+    nsnc
     ```
 
 - Nombre de los módulos de menos de 5 horas semanales:
@@ -219,13 +219,13 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     _XPath: En un sólo paso._
 
     ```
-    
+    /ies/modulos/modulo[horasSemanales < 5]/nombre
     ```
 
     _XPath: En dos pasos._
 
     ```
-    
+    nsnc
     ```
 
 - Nombre de los módulos que se imparten en el primer curso de ASIR:
@@ -238,13 +238,13 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     _XPath: En un sólo paso._
 
     ```
-    
+    /ies/modulos/modulo[curso=1 and ciclo='ASIR']/nombre/text()
     ```
 
     _XPath: En dos pasos._
 
     ```
-    
+    /ies/modulos/modulo[curso=1][ciclo='ASIR']/nombre/text()
     ```
 
 - Horas semanales de los módulos de más de 3 horas semanales:
@@ -258,13 +258,13 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     _XPath: En un sólo paso._
 
     ```
-    
+    /ies/modulos/modulo[horasSemanales > 3]/horasSemanales/text()
     ```
 
     _XPath: En dos pasos._
 
     ```
-    
+    nsnc
     ```
 
 ## Ejercicio 3:
@@ -329,7 +329,7 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     _XPath:_
 
     ```
-    
+    /ies/modulos/modulo[ciclo='SMR']/nombre/text()
     ```
 
 - Nombre de los ciclos que incluyen el módulo "Lenguajes de marcas y sistemas de gestión de información":
@@ -340,7 +340,7 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     _XPath:_
 
     ```
-    /ies/ciclos/ciclo[@id=/ies/modulos/modulo[nombre="Lenguajes de marcas y sistemas de gestión de información"]/ciclo]/nombre
+    /ies/ciclos/ciclo[@id=/ies/modulos/modulo[nombre="Lenguajes de marcas y sistemas de gestión de información"]/ciclo]/nombre/text()
     ```
 
 - Nombre de los módulos de ciclos de Grado Superior:
@@ -352,7 +352,8 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     _XPath:_
 
     ```
-    
+    /ies/ciclos/ciclo[grado="Superior"]
+    /ies/modulos/modulo/nombre -> nombre módulos
     ```
 
 - Nombre de los módulos de ciclos cuyo título se aprobó en 2008:
