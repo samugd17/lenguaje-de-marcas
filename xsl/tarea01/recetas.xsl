@@ -22,10 +22,9 @@
 						<p>Tiempo de elaboración: <xsl:value-of select="tiempo"/></p>
 						<p>Esta receta puedes elaborarla en un/a: <xsl:value-of select="elaboracion"/></p>
 						<p>Calorías: <xsl:value-of select="calorias"/></p>
-						
 						<div class="table_list">
 						<div class="table_list_name">Listado de ingredientes de <xsl:value-of select="nombre"/></div>
-						<table>
+						<table class="table_list">
 							<tr class="upper">
 								<th>Nombre del ingrediente</th>
 								<th>Cantidad necesaria</th>
