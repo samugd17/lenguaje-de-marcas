@@ -27,7 +27,7 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
 </ies>
 ```
 
-- __Nombre del Instituto__:
+- Nombre del Instituto:
     ```xml
     <nombre>IES Puerto de la Cruz –Telesforo Bravo</nombre>
     ```
@@ -38,8 +38,9 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     ```
 
 - __Página web del Instituto__:
-
+    ```xml
     <web>https://www3.gobiernodecanarias.org/medusa/edublog/iespuertodelacruztelesforobravo/</web>
+    ```
 
     _XPath:_
 
@@ -47,9 +48,11 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     ies/web
     ```
 
-- __Nombre de los Ciclos Formativos__:
+- Nombre de los Ciclos Formativos:
 
-    Administración de Sistemas Informáticos en Red Desarrollo de Aplicaciones Web Sistemas Microinformáticos y Redes
+    - Administración de Sistemas Informáticos en Red 
+    - Desarrollo de Aplicaciones Web 
+    - Sistemas Microinformáticos y Redes
 
     _XPath:_
 
@@ -57,9 +60,11 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     /ies/ciclos/ciclo/nombre
     ```
 
-- __Siglas por las que se conocen los Ciclos Formativos__:
+- Siglas por las que se conocen los Ciclos Formativos:
 
-    id="ASIR" id="DAM" id="SMR"
+    - id="ASIR" 
+    - id="DAM" 
+    - id="SMR"
 
     _XPath:_
 
@@ -67,16 +72,18 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     /ies/ciclos/ciclo/@id
     ```
 
-- __Años en los que se publicaron los decretos de título de los Ciclos Formativos__:
+- Años en los que se publicaron los decretos de título de los Ciclos Formativos:
     
-    año="2009" año="2010" año="2008"
+    - año="2009" 
+    - año="2010" 
+    - año="2008"
 
     _XPath:_
     ```
     /ies/ciclos/ciclo/decretoTitulo/@año
     ```
 
-- __Ciclos Formativos de Grado Medio (se trata de obtener el elemento <ciclo> completo)__:
+- Ciclos Formativos de Grado Medio (se trata de obtener el elemento <ciclo> completo):
     ```xml
     <ciclo id="SMR">
     <nombre>Sistemas Microinformáticos y Redes</nombre>
@@ -88,7 +95,7 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     /ies/ciclos/ciclo[grado="Medio"]
     ```
 
-- __Nombre de los Ciclos Formativos de Grado Superior__:
+- Nombre de los Ciclos Formativos de Grado Superior:
 
     ```xml
     <nombre>Administración de Sistemas Informáticos en Red</nombre>
@@ -100,17 +107,18 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     /ies/ciclos/ciclo[grado="Superior"]/nombre
     ```
 
-- __Nombre de los Ciclos Formativos anteriores a 2010__:
+- Nombre de los Ciclos Formativos anteriores a 2010:
 
-    Administración de Sistemas Informáticos en Red Sistemas Microinformáticos y Redes
+    - Administración de Sistemas Informáticos en Red 
+    - Sistemas Microinformáticos y Redes
 
     _XPath:_
 
     ```
-    /ies/ciclos/ciclo[decretoTitulo/@año<2010]/nombre
+    /ies/ciclos/ciclo[decretoTitulo/@año<2010]/nombre/text()
     ```
 
-- __Nombre de los Ciclos Formativos de 2008 o 2010__:
+- Nombre de los Ciclos Formativos de 2008 o 2010:
 
     - Desarrollo de Aplicaciones Multiplataforma 
     - Sistemas Microinformáticos y Redes
@@ -118,7 +126,7 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     _XPath:_
 
     ```
-    /ies/ciclos/ciclo[decretoTitulo/@año=2008 or decretoTitulo/@año=2010]/nombre
+    /ies/ciclos/ciclo[decretoTitulo/@año=2008 or decretoTitulo/@año=2010]/nombre/text()
     ```
 
 ### Ejercicio 2.
@@ -352,8 +360,7 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     _XPath:_
 
     ```
-    /ies/ciclos/ciclo[grado="Superior"]
-    /ies/modulos/modulo/nombre -> nombre módulos
+    /ies/modulos/modulo[ciclo=/ies/ciclos/ciclo[grado="Superior"]/@id]/nombre/text()
     ```
 
 - Nombre de los módulos de ciclos cuyo título se aprobó en 2008:
@@ -363,7 +370,7 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     _XPath:_
 
     ```
-    
+    /ies/modulos/modulo[ciclo=/ies/ciclos/ciclo[decretoTitulo/@año=2008]/@id]/nombre/text()
     ```
 
 - Grado de los ciclos con módulos de primer curso:
@@ -374,5 +381,5 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
     _XPath:_
 
     ```
-    
+    /ies/ciclos/ciclo[@id=/ies/modulos/modulo[curso=1]/ciclo]/grado/text()
     ```
