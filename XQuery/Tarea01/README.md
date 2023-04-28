@@ -64,9 +64,15 @@
     8. Mostrar profesores que den clases de bailes por una cuota mensual.
 
     ```
+    for $profesor in bailes/baile
+    where $profesor/precio/@cuota = "mensual"
+    return $profesor/profesor/text()
     ```
 
     9. Mostrar el nombre de los bailes de la sala 1, que se pague con euros y el precio sea menor a 35.
 
     ```
+    for $baile in bailes/baile
+    where $baile/sala = 1 and $baile/precio < 35 and $baile/precio/@moneda = "euro"
+    return $baile/nombre/text()
     ```
