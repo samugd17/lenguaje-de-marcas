@@ -120,12 +120,32 @@
 
     15. Obtener el dia, mes y año de los bailes mensuales, tanto del comienzo como del final. 
     ```
+    for $baile in //baile
+    where $baile/precio/@cuota = "mensual"
+    return 
+    <baile>
+    <comienzo>
+        <dia>{day-from-date($baile/comienzo)}</dia>
+        <mes>{month-from-date($baile/comienzo)}</mes>
+        <anio>{year-from-date($baile/comienzo)}</anio>
+    </comienzo>
+    <fin>
+        <dia>{day-from-date($baile/fin)}</dia>
+        <mes>{month-from-date($baile/fin)}</mes>
+        <anio>{year-from-date($baile/fin)}</anio>
+    </fin>
+    </baile>
     ```
 
     16. Obtener los bailes que tengan mas de 100 dias de diferencia.
     ```
+    for $baile in //baile
+    where days-from-duration(xs:date($baile/fin)-xs:date($baile/comienzo)) > 100
+    return $baile
     ```
     
     17. Obtener la diferencia de dias del comienzo del baile con la fecha actual. 
     ```
+    for $baile in //baile
+    return days-from-duration(current-date()-xs:date($baile/comienzo))
     ```
