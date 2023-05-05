@@ -110,9 +110,13 @@ return <total>{$total}</total>
 ```
 ### 13.	Mostrar cada uno de los precios de los libros, y al final una nueva etiqueta con la suma de los precios.
 ```
+let $total := sum(/bookstore/book/price)
+let $price := //price
+return <books>{$price}<total>{$total}</total></books>
 ```
 ### 14.	Mostrar el título y el número de autores que tiene cada título en etiquetas diferentes.
 ```
+
 ```
 ### 15.	Mostrar en la misma etiqueta el título y entre paréntesis el número de autores que tiene ese título.
 ```
