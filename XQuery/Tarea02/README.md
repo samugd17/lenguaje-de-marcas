@@ -1,12 +1,9 @@
-# XQuery
+<div aling="justify">
+# Tarea02: XQuery
 
-_Actividad XML - XQuery 1._
+- Dado el siguiente documento XML realiza las siguientes consultas con XQuery:
 
-### Ejercicio 1
-
-Dado el siguiente documento XML realiza las siguientes consultas con XQuery:
-
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <bookstore>
   <book category="COOKING">
@@ -116,30 +113,58 @@ return <books>{$price}<total>{$total}</total></books>
 ```
 ### 14.	Mostrar el título y el número de autores que tiene cada título en etiquetas diferentes.
 ```
-
+for $book in //book
+let $authors := count($book/author)
+return <book>{$book/title}<authors>{$authors}</authors></book>
 ```
 ### 15.	Mostrar en la misma etiqueta el título y entre paréntesis el número de autores que tiene ese título.
 ```
+for $book in //book
+let $authors := count($book/author)
+return <book>{$book/title/text()}({$authors})</book>
 ```
 ### 16.	Mostrar los libros escritos en años que terminen en "3".
 ```
+for $book in //book
+where ends-with($book/year, "3")
+return $book
 ```
 ### 17.	Mostrar los libros cuya categoría empiece por "C".
 ```
+for $book in //book
+where starts-with($book/@category, "C")
+return $book
 ```
 ### 18.	Mostrar los libros que tengan una "X" mayúscula o minúscula en el título.
 ```
+for $book in //book
+where contains($book/title, "X") or contains($book/title, "x")
+return $book
 ```
 ### 19.	Mostrar el título y el número de caracteres que tiene cada título, cada uno con su propia etiqueta.
 ```
+for $book in //title
+return <books>{$book} <lenght>{string-length($book)}</lenght></books>
 ```
 ### 20.	Mostrar todos los años en los que se ha publicado un libro eliminando los repetidos. Etiquétalos con "año".
 ```
+for $year in distinct-values (//year)
+return <año>{$year}</año>
 ```
 ### 21.	Mostrar todos los autores eliminando los que se repiten y ordenados por el número de caracteres que tiene cada autor.
 ```
+for $author in distinct-values (//author)
+order by string-length($author)
+return $author
 ```
 ### 22.	Mostrar los títulos en una tabla de HTML.
 ```
+<table>
+<tr>
+{for $title in //book/title
+return <td>{$title/text()}</td>}
+</tr>
+</table>
 ```
- 
+
+</div>
