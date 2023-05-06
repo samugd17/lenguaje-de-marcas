@@ -1,4 +1,5 @@
 <div aling="justify">
+  
 # Tarea02: XQuery
 
 - Dado el siguiente documento XML realiza las siguientes consultas con XQuery:
