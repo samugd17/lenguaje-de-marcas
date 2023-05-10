@@ -56,6 +56,8 @@ Dado el siguiente documento XML realiza las siguientes consultas con XQuery:
 ```
 ### 1.	Muestra el título del videojuego.
 ```
+let $title := //titulo
+return $title
 ```
 ### 2.	Muestra la plataforma del videojuego.
 ```
