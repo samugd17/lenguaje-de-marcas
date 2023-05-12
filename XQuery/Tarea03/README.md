@@ -230,6 +230,9 @@ return $habilidad
 for $duracion in //agente
 where $duracion/habilidadUltimate/@duracion > 8
 
+for $agente in //agente
+[number(translate(habilidadUltimate/@duracion, "s", ""))]
+
 - - - Output - - -
 <nombre>Viper</nombre>
 ```
