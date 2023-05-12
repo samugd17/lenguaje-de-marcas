@@ -235,6 +235,7 @@ where $duracion/habilidadUltimate/@duracion > 8
 ```
 ### 19. Muestra el nombre del agente con la habilidad ultimate más corta.
 ```
+
 ```
 ### 20. Muestra los nombres de los agentes que tienen habilidades primarias y secundarias con la misma duración.----
 ```
