@@ -245,9 +245,17 @@ for $agente in //agente
 ```
 ### 21. Muestra el nombre de los agentes que tienen habilidades primarias y secundarias que pertenecen al mismo tipo.
 ```
+for $agente in //agente
+where $agente/habilidadPrimaria/@tipo = $agente/habilidadSecundaria/@tipo
+return $agente/nombre/text()
+
 ```
 ### 22. Muestra los nombres de los agentes cuyas habilidades primarias son de tipo "Daño" y sus habilidades secundarias son de tipo "Curación".
 ```
+for $agente in //agente
+where $agente/habilidadPrimaria/@tipo = "Daño" and $agente/habilidadSecundaria/@tipo = "Curación"
+return $agente/nombre/text()
+
 ```
 ### 23. Muestra los nombres de los agentes que tienen habilidades primarias y secundarias que contienen la misma palabra.
 ```
