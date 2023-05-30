@@ -6,12 +6,10 @@
 - [¿Qué es Odoo?](#¿qué-es-odoo)
 
 ### Primera parte:
-- [Descarga e instala Odoo.](#paso1windows)
-- [Crea el usuario y la base de datos principal.](#paso2windows)
-- [Crea un sitio web.](#paso3windows)
-- [¿Cómo editamos nuestra página web? Edítala y diséñala a tu gusto.](#paso4windows)
-- [Instala y prueba otro módulo que consideres interesante.](#paso5windows)
-- [Crea tu propio módulo de Odoo.](#paso6windows)
+- [Descarga e instala Odoo.](#descarga-e-instala-odoo)
+- [Crea un sitio web.](#crea-un-sitio-web)
+- [¿Cómo editamos nuestra página web? Edítala y diséñala a tu gusto.](#¿cómo-editamos-nuestra-página-web-edítala-y-diséñala-a-tu-gusto)
+- [Crea tu propio módulo de Odoo.](#crea-tu-propio-módulo-de-odoo)
 
 ### Segunda parte:
 - [¿Cuáles son las principales características y funcionalidades del ERP de Odoo?](#¿cuáles-son-las-principales-características-y-funcionalidades-del-erp-de-odoo)
@@ -23,11 +21,10 @@
 ### Tercera parte:
 - [Descargar e instalar usando docker o MV el ERP Odoo.](#descargar-e-instalar-usando-docker-o-mv-el-erp-odoo)
 - [Crea el usuario y la base de datos principal.](#crea-el-usuario-y-la-base-de-datos-principal)
-- [Crea un sitio web.](#crea-un-sitio-web)
-- [¿Cómo editamos nuestra página web? Edítala y diséñala a tu gusto.](#¿cómo-editamos-nuestra-página-web-edítala-y-diséñala-a-tu-gusto)
+- [Crea un sitio web.](#crea-un-sitio-web-1)
+- [¿Cómo editamos nuestra página web?](#¿cómo-editamos-nuestra-página-web)
 - [Instala y prueba el módulo de foro (Forum) desde la sección Apps.](#instala-y-prueba-el-módulo-de-foro-forum-desde-la-sección-apps)
 - [Desinstala el módulo de foro.](#desinstala-el-módulo-de-foro)
-- [Instala y prueba otro módulo que consideres interesante.]()
 
 ## ¿Qué es Odoo?
 Odoo es un sistema integrado de gestión empresarial (ERP) de código abierto y una plataforma de aplicaciones empresariales. Ofrece una amplia gama de módulos y funcionalidades que abarcan diversas áreas de una empresa, como ventas, compras, inventario, fabricación, contabilidad, recursos humanos y más.
@@ -35,8 +32,128 @@ Odoo es un sistema integrado de gestión empresarial (ERP) de código abierto y 
 Una de las características distintivas de Odoo es su enfoque modular, lo que significa que puedes elegir los módulos específicos que necesitas para adaptar el sistema a los requerimientos de tu empresa. Además, ofrece una gran flexibilidad y capacidad de personalización, lo que te permite ajustar el sistema según tus necesidades empresariales particulares. El sistema permite automatizar procesos, gestionar inventarios, realizar seguimiento de ventas, administrar proyectos, generar informes financieros, controlar la producción, gestionar el servicio al cliente y mucho más.
 
 <div align="center">
-<img src="img\odoo-logo.png" width="900">
+<img src="img\odoo-logo.png" width="750">
 </div>
+
+## Primera parte
+
+## Descarga e instala Odoo.
+Para la instalación de Odoo en Windows, debemos acceder a este enlace: https://www.odoo.com/es_ES/page/download y rellenar los campos con nuestros datos. Una vez hecho esto, descargaremos el _"Odoo community"_ para Windows, la versión gratuita de este ERP.
+
+<div align='center'>
+<img src="img\OdooW1.png" width="750">
+</div>
+  
+Una vez hecho esto, ya tendremos el instalador en nuestra carpeta de descargas. Lo ejecutaremos y seguiremos el básico procedimiento de instalación de cualquier aplicación. Como puede ser la elección del idioma, la aceptación de las políticas de empresa... etc. Eso sí, a la hora de instalarla, hay que marcar la opción de integrar la base datos PostgreSQL, la cual podremos modificar durante el proceso de instalación. Aunque recomiendo no variar sus datos si no se tienen los conocimientos adecuados y suficientes.
+<div align='center'>
+<img src="img\OdooW3.png" width="">
+<img src="img\OdooW2.png" width="491">
+</div>
+
+## Crea un sitio web.
+Para crear nuestro propio sitio web, deberemos ir al apartado de aplicaciones situado en la barra izquierda de la interfaz web. Una vez dentro, instalaremos el módulo *Sitio web*.
+  
+<div align='center'>
+<img src="img\OdooW7.png" width="750">
+</div>
+  
+Esta acción de activar el módulo anterior, nos dirigirá a una página donde comenzará el proceso de creación de nuestra propia página web. Totalmente guiado y con elecciones básicas que tomar, es bastante intuitivo y sencillo de seguir. 
+
+En primer lugar, determinaremos la función principal de nuestra página web. Acto seguido, tendremos la posibilidad de elegir la paleta de colores que usaremos, así como otras funciones y características que tendrá nuestra web. 
+
+<div align='center'>
+<img src="img\OdooW8.png" width="750">
+</div>
+<div align='center'>
+<img src="img\OdooW9.png" width="750">
+</div>
+ 
+Una vez hecho esto, Odoo empezará a crear nuestra web desde cero con los datos que le hemos proporcionado, siguiendo un estilo que previamente podremos elegir.
+
+<div align='center'>
+<img src="img\OdooW10.png" width="">
+</div>
+
+## ¿Cómo editamos nuestra página web?
+Para poder editarla, tenemos que desplazarnos hacia la esquina superior izquierda de la pantalla y ahí nos aparecerá de forma clara un botón donde clickar para modificarla. Una vez pulsado, nos aparecerá una barra superior tal y como podemos ver en la imagen. En ésta, hemos de volver a cliclar sobre editar, pero ahora en la esquina superior derecha. De esta manera se nos abrirá el menú de edición a la derecha de nuestras pantallas, el cual, variará dependiendo de la zona que estemos interesados en cambiar.
+
+Además, si deseamos instalar módulos nuevos, bastará con acceder a nuestra zona de aplicaciones en el menú desplegable superior de la izquierda, y desde ahí será  tan sencillo como integrar aquellos que deseemos.
+  
+<div align='center'>
+<img src="img\OdooW11.png" width="">
+</div>  
+  
+## Crea tu propio módulo de Odoo.
+Para crear nuestro propio módulo desde la **terminal**, tendremos que seguir una serie de pasos:
+
+1. Abrir la terminal en modo **admnistrador*.
+2. Abrir la carpeta **server* de Odoo tal y como se muestra en la siguiente imagen.
+3. Crear una carpeta. Le podremos poner el nombre que deseemos, en nuestro caso, la llamé *module_addons*.
+3. Escribir el siguiente comando: 
+  ```
+  "C:\Program Files\Odoo 16.0.20210517\python\python.exe" odoo-bin scaffold custom_module custom_addons
+  ```
+Gracias a este comando, podremos crear nuestro módulo en la carpeta seleccionada.
+  
+<div align='center'>
+<img src="img\OdooW4.png" width="">
+</div>
+
+
+Una vez realizado este paso, deberemos abriremos **Sublime Text** para poder añadir la carpera que creamos anteriormente en la configuración de Odoo. 
+Esto, lo haremos en el archivo *odoo.conf* en *addons_path*. 
+  
+<div align='center'>
+<img src="img\OdooW5.png" width="">
+</div>
+
+Finalmente, sólo nos quedará reiniciar los servicios de **Odoo** y **PostgreSQL** además de nuestra sesión web. De esta forma, en nuestra lista de aplicaciones ahora aparecerá nuestro nuevo módulo.
+  
+<div align='center'>
+<img src="img\OdooW6.png" width="">
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Segunda parte
 ### ¿Cuáles son las principales características y funcionalidades del ERP de Odoo?
