@@ -62,6 +62,15 @@ Además, gracias a la automatización de varias de sus funciones, Odoo nos ahorr
 
 Finalmente, este ERP, también nos proporciona informes y análisis en tiempo real sobre diferentes aspectos de la empresa. Lo  que nos permite tener más datos fiables para una mejor toma de decisiones.
 ### ¿Qué módulos y aplicaciones adicionales ofrece Odoo para complementar su funcionalidad de ERP?
+La plataforma cuenta con una amplia gama de opciones para adaptarse a diferentes necesidades empresariales y sectores industriales. Los usuarios pueden seleccionar y personalizar los módulos que mejor se ajusten a sus requerimientos, lo que permite una solución ERP altamente adaptable y escalable.
+
+Entre sus principales módulos, podemos encontrar algunos como:
+
+- Comercio electrónico: Permite crear y gestionar tiendas en línea. Incluye características como catálogo de productos, carrito de compras, pasarelas de pago, gestión de envíos, promociones y gestión de clientes.
+
+- Punto de venta (POS): Permite la gestión de ventas en tiendas físicas, con funciones como ventas en efectivo, gestión de cajas registradoras, escaneo de productos, generación de recibos e integración con hardware de punto de venta.
+
+- Forum: Permite crear y gestionar foros en línea, donde los usuarios pueden intercambiar ideas, hacer preguntas y participar en conversaciones. Ofrece categorías, publicación de mensajes, búsqueda avanzada, suscripciones y moderación. Es una herramienta colaborativa para facilitar la comunicación y el intercambio de conocimientos.
 ### ¿Cuáles son las ventajas de utilizar el ERP de Odoo en comparación con otros sistemas similares en el mercado?
 ### ¿Cuáles son los requisitos técnicos para implementar el ERP de Odoo en una empresa y qué consideraciones se deben tener en cuenta antes de iniciar la implementación?
 ## Tercera parte
