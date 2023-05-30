@@ -72,7 +72,46 @@ Entre sus principales módulos, podemos encontrar algunos como:
 
 - Forum: Permite crear y gestionar foros en línea, donde los usuarios pueden intercambiar ideas, hacer preguntas y participar en conversaciones. Ofrece categorías, publicación de mensajes, búsqueda avanzada, suscripciones y moderación. Es una herramienta colaborativa para facilitar la comunicación y el intercambio de conocimientos.
 ### ¿Cuáles son las ventajas de utilizar el ERP de Odoo en comparación con otros sistemas similares en el mercado?
+Como bien mencionamos en apartados anteriores, las ventajas y funcionalidades de Odoo son muchas, muy variadas y además distintivas en comparación con otros sistemas similares en el mercado, como pueden ser:
+
+1. Modularidad y personalización: Odoo se basa en un enfoque modular, lo que significa que los usuarios pueden seleccionar los módulos específicos que necesitan y personalizarlos según sus requisitos comerciales. Esto permite una implementación más flexible y adaptada a las necesidades de cada empresa.
+
+2. Actualizaciones regulares y mejoras continuas: Odoo realiza actualizaciones regulares y ofrece mejoras continuas en su sistema. 
+
+3. Bajo costo de implementación y licencia: En comparación con otros sistemas ERP en el mercado, Odoo tiende a tener un costo de implementación y licencia más bajo. Esto lo hace más accesible para pequeñas y medianas empresas que buscan una solución ERP integral sin incurrir en grandes gastos.
+
+4. Comunidad activa y soporte: Odoo cuenta con una gran comunidad de usuarios y desarrolladores que contribuyen activamente con módulos, soluciones y mejoras. Lo que ayuda a resolver problemas rápidamente y mantenerse actualizado con las últimas funcionalidades.
+
+5. Interfaz intuitiva y fácil de usar: Odoo cuenta con una interfaz de usuario sencilla y moderna, lo que facilita su uso tanto para usuarios experimentados como para aquellos que sean más  nuevos.
+
+6. Integración completa:  Odoo proporciona una suite completa de aplicaciones empresariales totalmente integradas.
+
 ### ¿Cuáles son los requisitos técnicos para implementar el ERP de Odoo en una empresa y qué consideraciones se deben tener en cuenta antes de iniciar la implementación?
+Para implementar el ERP de Odoo en una empresa, hay algunos requisitos técnicos y consideraciones importantes que deben tenerse en cuenta. 
+
+Para implementar el ERP de Odoo en una empresa, hay algunos requisitos técnicos y consideraciones importantes que deben tenerse en cuenta. A continuación, se detallan algunos de ellos:
+
+__Requisitos técnicos:__
+
+- Servidor: Se requiere un servidor para alojar la instalación de Odoo. Puede ser un servidor físico o virtual.
+
+- Sistema operativo: Odoo es compatible con varios sistemas operativos, incluyendo Linux (como Ubuntu, Debian, CentOS), Windows y macOS. Se debe seleccionar el sistema operativo adecuado y configurarlo según las recomendaciones de Odoo.
+
+- Base de datos: Odoo utiliza una base de datos para almacenar y gestionar la información. Es compatible con diferentes bases de datos, como PostgreSQL, MySQL, SQLite y Oracle. Se debe seleccionar y configurar la base de datos adecuada para la implementación de Odoo.
+
+- Conectividad: Se requiere una conexión a Internet estable y rápida para acceder a la instancia de Odoo y garantizar la comunicación con los usuarios y servicios externos.
+
+__Consideraciones antes de la implementación:__
+
+- Análisis de requerimientos: Antes de iniciar la implementación, es necesario conocer que módulos y funcionalidades de Odoo son necesarios y cómo se deben configurar.
+
+- Personalización y configuración: Odoo es altamente personalizable y puede adaptarse a los procesos y flujos de trabajo específicos de la empresa. Es importante tener al menos una idea de como debe ser la interfaz de la web a implementar.
+
+- Capacitación y formación: Es recomendable capacitar a los usuarios clave y al personal involucrado en la implementación de Odoo.
+
+- Planificación de la migración de datos: En muchas ocasiones, la empresa contará con datos existentes en sistemas anteriores, por tanto, se debe planificar la migración de esos datos a Odoo.
+
+- Soporte técnico y mantenimiento: Antes de iniciar la implementación, es importante considerar cómo se brindará el soporte técnico y el mantenimiento continuo del sistema. Esto puede implicar tener un equipo interno de soporte o contar con un proveedor externo de servicios.
 ## Tercera parte
 ### Descargar e instalar usando docker o MV el ERP Odoo.
 
