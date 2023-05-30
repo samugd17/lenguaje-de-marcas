@@ -14,20 +14,20 @@
 - [Crea tu propio módulo de Odoo.](#paso6windows)
 
 ### Segunda parte:
-- [¿Cuáles son las principales características y funcionalidades del ERP de Odoo?](#caracteristicas)
-- [¿Cómo puede el ERP de Odoo ayudar a las empresas a mejorar su eficiencia operativa?](#ERP)
-- [¿Qué módulos y aplicaciones adicionales ofrece Odoo para complementar su funcionalidad de ERP?](#módulos)
-- [¿Cuáles son las ventajas de utilizar el ERP de Odoo en comparación con otros sistemas similares en el mercado?](#ventajas)
-- [¿Cuáles son los requisitos técnicos para implementar el ERP de Odoo en una empresa y qué consideraciones se deben tener en cuenta antes de iniciar la implementación?](#requisitos)
+- [¿Cuáles son las principales características y funcionalidades del ERP de Odoo?](#¿cuáles-son-las-principales-características-y-funcionalidades-del-erp-de-odoo)
+- [¿Cómo puede el ERP de Odoo ayudar a las empresas a mejorar su eficiencia operativa?](#¿cómo-puede-el-erp-de-odoo-ayudar-a-las-empresas-a-mejorar-su-eficiencia-operativa)
+- [¿Qué módulos y aplicaciones adicionales ofrece Odoo para complementar su funcionalidad de ERP?](#¿qué-módulos-y-aplicaciones-adicionales-ofrece-odoo-para-complementar-su-funcionalidad-de-erp)
+- [¿Cuáles son las ventajas de utilizar el ERP de Odoo en comparación con otros sistemas similares en el mercado?](#¿cuáles-son-las-ventajas-de-utilizar-el-erp-de-odoo-en-comparación-con-otros-sistemas-similares-en-el-mercado)
+- [¿Cuáles son los requisitos técnicos para implementar el ERP de Odoo en una empresa y qué consideraciones se deben tener en cuenta antes de iniciar la implementación?](#¿cuáles-son-los-requisitos-técnicos-para-implementar-el-erp-de-odoo-en-una-empresa-y-qué-consideraciones-se-deben-tener-en-cuenta-antes-de-iniciar-la-implementación)
 
 ### Tercera parte:
-- [Descargar e instalar usando docker o MV el ERP Odoo.](#paso1mv)
-- [Crea el usuario y la base de datos principal.](#paso2mv)
-- [Crea un sitio web.](#paso3mv)
-- [¿Cómo editamos nuestra página web? Edítala y diséñala a tu gusto.](#paso4mv)
-- [Instala y prueba el módulo de foro (Forum) desde la sección Apps.](#paso5mv)
-- [Desinstala el módulo de foro.](#paso6mv)
-- [Instala y prueba otro módulo que consideres interesante.](#paso7mv)
+- [Descargar e instalar usando docker o MV el ERP Odoo.](#descargar-e-instalar-usando-docker-o-mv-el-erp-odoo)
+- [Crea el usuario y la base de datos principal.](#crea-el-usuario-y-la-base-de-datos-principal)
+- [Crea un sitio web.](#crea-un-sitio-web)
+- [¿Cómo editamos nuestra página web? Edítala y diséñala a tu gusto.](#¿cómo-editamos-nuestra-página-web-edítala-y-diséñala-a-tu-gusto)
+- [Instala y prueba el módulo de foro (Forum) desde la sección Apps.](#instala-y-prueba-el-módulo-de-foro-forum-desde-la-sección-apps)
+- [Desinstala el módulo de foro.](#desinstala-el-módulo-de-foro)
+- [Instala y prueba otro módulo que consideres interesante.]()
 
 ## ¿Qué es Odoo?
 Odoo es un sistema integrado de gestión empresarial (ERP) de código abierto y una plataforma de aplicaciones empresariales. Ofrece una amplia gama de módulos y funcionalidades que abarcan diversas áreas de una empresa, como ventas, compras, inventario, fabricación, contabilidad, recursos humanos y más.
@@ -38,6 +38,32 @@ Una de las características distintivas de Odoo es su enfoque modular, lo que si
 <img src="img\odoo-logo.png" width="900">
 </div>
 
+## Segunda parte
+### ¿Cuáles son las principales características y funcionalidades del ERP de Odoo?
+Entre sus muchas características y funcionalidades, lo más destacable de Odoo es que permite gestionar todo el ciclo de vida de varias aplicaciones o aspectos disponibles en una página web, como pueden ser los siguientes:
+
+1. Gestión de ventas
+2. Gestión de compras
+3. Gestión de inventario
+4. Gestión de proyectos
+5. Gestión de recursos humanos
+
+En todos ellos, el control en todo momento es máximo, por ejemplo: Para el quinto elemento ("Gestión de recursos humanos), Odoo proporciona herramientas para gestionar el ciclo de vida de los empleados, incluyendo la gestión de contratos, seguimiento de asistencia, registro de tiempos, gestión de nóminas y reclutamiento.
+
+Además de todo esto, cabe resaltar la alta escalabilidad y personalización presente en todo momento en la herramienta, que puede ser adaptada en cualquier momento en cuestión de minutos.
+
+### ¿Cómo puede el ERP de Odoo ayudar a las empresas a mejorar su eficiencia operativa?
+
+El ERP de Odoo puede ayudar a las empresas a mejorar su eficiencia operativa de varias maneras. Aquí, citaremos las tres principales:
+
+En primer lugar, al disponer de todas las herramientas necesarias en un mismo lugar, Odoo nos evita el tener que depender de otras  aplicaciones externas. Todo se puede hacer con Odoo.
+
+Además, gracias a la automatización de varias de sus funciones, Odoo nos ahorra mucho tiempo y es capaz de reducir nuestros errores en una gran cantidad.
+
+Finalmente, este ERP, también nos proporciona informes y análisis en tiempo real sobre diferentes aspectos de la empresa. Lo  que nos permite tener más datos fiables para una mejor toma de decisiones.
+### ¿Qué módulos y aplicaciones adicionales ofrece Odoo para complementar su funcionalidad de ERP?
+### ¿Cuáles son las ventajas de utilizar el ERP de Odoo en comparación con otros sistemas similares en el mercado?
+### ¿Cuáles son los requisitos técnicos para implementar el ERP de Odoo en una empresa y qué consideraciones se deben tener en cuenta antes de iniciar la implementación?
 ## Tercera parte
 ### Descargar e instalar usando docker o MV el ERP Odoo.
 
