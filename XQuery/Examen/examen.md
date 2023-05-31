@@ -1,4 +1,5 @@
 Dado el siguiente documento XML realiza las siguientes consultas con XQuery: 
+
 ### 1. Escribe una consulta en XQuery para obtener todos los títulos de las películas en inglés.
 ```
 for $title in //titulo/@idioma
