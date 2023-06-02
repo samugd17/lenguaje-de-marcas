@@ -2,14 +2,14 @@ window.onload = () => {
     detectColor();
 }
 
-var colors = ["blue", "pink", "white", "violet", "black", "green", "red", "yellow"];
-console.log(colors)
+const colors = ["blue", "pink", "white", "violet", "black", "green", "red", "yellow"];
+
 function detectColor() {
     var buttons = document.querySelectorAll('#container div');
     for (var i = 0; i < buttons.length; i++) {
         var button = buttons[i];
         button.addEventListener("click", function () {           
-            changeBgColor(colors[RandomColor()]);
+            changeColor(this);
         })
     }
 }
@@ -18,6 +18,6 @@ function changeBgColor(color) {
     document.getElementsByTagName("body")[0].style.backgroundColor = color;
 }
 
-function RandomColor() {
-    return Math.floor(Math.random() * colors.length);
+function changeColor(cell) {
+    cell.style.backgroundColor = colors(Math.floor[Math.random() * colors.length]);
 }
