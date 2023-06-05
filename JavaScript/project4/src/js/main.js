@@ -2,7 +2,7 @@ window.onload = () => {
     detectColor();
 }
 
-const colors = ["blue", "pink", "white", "violet", "black", "green", "red", "yellow"];
+const colors = ["blue", "pink", "aquamarine", "violet", "black", "green", "red", "yellow"];
 
 function detectColor() {
     var buttons = document.querySelectorAll('#container div');
@@ -19,5 +19,5 @@ function changeBgColor(color) {
 }
 
 function changeColor(cell) {
-    cell.style.backgroundColor = colors(Math.floor[Math.random() * colors.length]);
+    cell.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
 }
